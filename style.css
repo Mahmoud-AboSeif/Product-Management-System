@@ -1,0 +1,223 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: radial-gradient(circle at center center, rgb(33, 33, 33), rgb(33, 33, 33));
+  /* background: rgb(34, 34, 34); */
+  color: #fff;
+  font-family: system-ui;
+}
+
+.countiner {
+  width: 80%;
+  margin: auto;
+}
+
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0px;
+
+}
+
+.sp {
+  margin: 4px 0px;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: none;
+  background: #111;
+  padding: 0px 5px;
+  margin: 4px 0px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+input:focus {
+  background: #000;
+  transform: scale(1.03);
+}
+
+.price input {
+  width: 20%;
+  text-align: center;
+
+}
+
+#total {
+  background: #a00d02;
+  padding: 5px 3px;
+  border-radius: 4px;
+}
+
+#total::before {
+  content: 'total: ';
+  text-transform: capitalize;
+}
+
+button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: #390053;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#deleteAll {
+  margin: 10px 0px;
+}
+
+button:hover {
+  background: #5d0586;
+  transform: scaleY(1.01);
+  letter-spacing: 1px;
+}
+
+.btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnSearch button {
+  width: 45%;
+}
+
+#searchCategory {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+#searchTitle {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+table {
+
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+table th {
+  text-transform: capitalize;
+  letter-spacing: .5px;
+
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+@media(max-width: 767.98px) {
+  .price input {
+    width: 19%;
+  }
+
+  th,
+  td {
+    padding: 3px;
+    font-size: 14px;
+  }
+
+  #update,
+  #delete {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 575.98px) {
+  .price input {
+    width: 17%;
+    text-align: left;
+    font-size: 10px;
+
+  }
+
+  #total {
+    padding: 4px 2px;
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 3px 1px;
+    font-size: 9px;
+  }
+
+  #update,
+  #delete {
+    font-size: 6px;
+
+  }
+}
+
+@media(max-width: 395.98px) {
+  .price input {
+    width: 19%;
+    text-align: left;
+    font-size: 10px;
+
+  }
+
+  #total {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+
+  }
+
+  #searchTitle,
+  #searchCategory {
+    font-size: 9px;
+  }
+
+  th,
+  td {
+    padding: 3px 1px;
+    font-size: 7px;
+  }
+
+  #update,
+  #delete {
+    font-size: 3px;
+  }
+
+  .head {
+    font-size: 14px;
+
+  }
+
+  .sp {
+    font-size: 13px;
+  }
+}
+
+.up {
+  width: 36px;
+  border-radius: 18px;
+  position: fixed;
+  bottom: 17px;
+  right: -40px;
+  background-color: #9d0be0;
+  color: #fff;
+  font-size: larger;
+  font-weight: bold;
+  padding: 5px;
+  transition: 0.1.5s;
+}
+
+.up.show {
+  right: 17px;
+}
